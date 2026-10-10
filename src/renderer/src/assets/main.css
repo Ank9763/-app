@@ -1,0 +1,71 @@
+/* 曲奇记账全局主题 —— 奶黄 + 焦糖（对应 CLAUDE.md 第 8 章） */
+:root {
+  /* 曲奇主题色 */
+  --qq-bg: #fbf3e4; /* 奶黄背景 */
+  --qq-card: #ffffff; /* 卡片白 */
+  --qq-primary: #c97f45; /* 焦糖主色 */
+  --qq-primary-dark: #a9683a;
+  --qq-text: #5a4632; /* 深棕文字 */
+  --qq-text-sub: #a08a6f; /* 次级文字 */
+  --qq-border: #f0e2c8;
+  --qq-danger: #e07a5f;
+
+  /* Element Plus 主色同步为焦糖色 */
+  --el-color-primary: #c97f45;
+  --el-color-primary-light-3: #d99d6e;
+  --el-color-primary-light-5: #e4b891;
+  --el-color-primary-light-7: #efd3b5;
+  --el-color-primary-light-8: #f4e0ca;
+  --el-color-primary-light-9: #faeee0;
+  --el-color-primary-dark-2: #a9683a;
+  --el-border-radius-base: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family:
+    'PingFang SC',
+    'Microsoft YaHei',
+    'Segoe UI',
+    sans-serif;
+  color: var(--qq-text);
+  background: var(--qq-bg);
+  -webkit-font-smoothing: antialiased;
+  user-select: none; /* 桌面应用习惯：页面不可选中文本 */
+}
+
+input,
+textarea {
+  user-select: text;
+}
+
+/* 通用卡片 */
+.qq-card {
+  background: var(--qq-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(184, 138, 84, 0.08);
+  padding: 24px;
+}
+
+/* 页面标题 */
+.qq-page-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* 字段小标题 */
+.field-label {
+  font-size: 13px;
+  color: var(--qq-text-sub);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
